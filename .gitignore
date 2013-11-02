@@ -1,0 +1,30 @@
+# for Imaging-C
+*.sxu
+#*.ini
+*.aps
+*.mku
+*.scx
+
+# VC++
+*.ncb
+*.aps
+*.suo
+
+# for java 
+*.class
+*.jar
+
+# From Wayne Rasband...
+*~
+
+# Windows stuff
+Thumbs.db
+
+# Mac Stuff
+.DS_Store
+
+# For this module
+README.html
+
+.Rproj.user
+.Rhistory
