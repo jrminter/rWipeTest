@@ -11,7 +11,7 @@ Depends:
     R (>= 3.0.2)
 Suggests:
     knitr
-License: GPL
+License: MIT
 LazyData: true
 Collate:
     'ComputeActivityCl36.R'
