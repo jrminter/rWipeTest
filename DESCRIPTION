@@ -1,0 +1,19 @@
+Package: rWipeTest
+Type: Package
+Title: Analyze wipe tests from the Tennelec Eclipse software
+Description: Given a vector of batch numbers, query the Eclipse database and
+    analyze the wipe test data.
+Version: 0.1.1
+Authors@R: # getOptions('devtools.desc.author')
+Author: John Minter <jrminter@gmail.com>
+Maintainer: John Minter <jrminter@gmail.com>
+Depends:
+    R (>= 3.0.2)
+Suggests:
+    knitr
+License: GPL
+LazyData: true
+Collate:
+    'ComputeActivityCl36.R'
+    'rWipeTest-package.r'
+    'ComputeActivityAm241.R'
