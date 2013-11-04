@@ -20,8 +20,9 @@
 #' library(rWipeTest)
 
 
-compSampleAcivity <- function(str.ana, str.wd, dat.dir){
+compSampleActivity <- function(str.ana, str.wd, dat.dir){
   setwd(str.wd)
+  str.ana.file <- paste(dat.dir,'wipeTest.RData')
   load(str.ana.file)
 
   pdf.dir       <- '../Sweave/pdf/'
@@ -163,6 +164,11 @@ compSampleAcivity <- function(str.ana, str.wd, dat.dir){
                           "-wipe-test-samples.csv", sep="")
   # write the samples to a csv file
   write.csv(sample.activity, file = str.samples.csv, row.names = FALSE )
+  
+  # save what we need in the analysis file
+  save(str.ana, alpha.stds, beta.stds,
+     blanks, samples, df.det.eff, outliers,
+     file=str.ana.file)
 
 }
 

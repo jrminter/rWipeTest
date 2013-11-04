@@ -43,14 +43,14 @@ compDetEff <- function(str.ana, str.wd, dat.dir){
 
     alpha.e.mean <- alpha.stds[,4]/a
     alpha.e.se   <- alpha.stds[,5]/a
-
-    alpha.stds$alpha.e.mean <- alpha.e.mean
-    alpha.stds$alpha.e.se   <- alpha.e.se
+    alpha.stds[,8] <- alpha.e.mean
+    alpha.stds[,9] <- alpha.e.se
+    names(alpha.stds) = c("batch","id","acq.date","alpha.cpm","alpha.se",
+                          "beta.cpm","beta.se","alpha.e.mean","alpha.e.se")
 
     print(alpha.stds)
-  
-    str.file <- paste(dat.dir, 'alphaStds.R', sep='')
-    dput(alpha.stds, str.file)
+    
+    print(beta.stds)
 
 
     # compute the beta detector efficiency
@@ -58,13 +58,10 @@ compDetEff <- function(str.ana, str.wd, dat.dir){
 
     beta.e.mean <- beta.stds[,6]/a
     beta.e.se   <- beta.stds[,7]/a
-
-    beta.stds$beta.e.mean <- beta.e.mean
-    beta.stds$beta.e.se   <- beta.e.se
-
-    print(beta.stds)
-    str.file <- paste(dat.dir, 'betaStds.R', sep='')
-    dput(beta.stds, str.file)
+    beta.stds[,8] <- beta.e.mean
+    beta.stds[,9] <- beta.e.se
+    names(beta.stds) = c("batch","id","acq.date","alpha.cpm","alpha.se",
+                          "beta.cpm","beta.se","beta.e.mean","beta.e.se")
 
 
     # plot once for graphics window

@@ -28,3 +28,4 @@ Collate:
     'sortAna.R'
     'compDetEff.R'
     'compSampleActivity.R'
+    'stderr.R'

@@ -1,8 +1,8 @@
-\name{compSampleAcivity}
-\alias{compSampleAcivity}
+\name{compSampleActivity}
+\alias{compSampleActivity}
 \title{Compute the sample activity}
 \usage{
-  compSampleAcivity(str.ana, str.wd, dat.dir)
+  compSampleActivity(str.ana, str.wd, dat.dir)
 }
 \arguments{
   \item{str.ana}{The name of the analysis \code{str.ana}}
