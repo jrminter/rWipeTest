@@ -1,0 +1,24 @@
+\name{activity.panel.boxplot}
+\alias{activity.panel.boxplot}
+\title{Create a panel box plot of activity}
+\usage{
+  activity.panel.boxplot(a, b)
+}
+\arguments{
+  \item{a}{The input vector of alpha counts (pCi) data
+  \code{a}}
+
+  \item{b}{The input vector of beta counts (pCi) \code{b}}
+}
+\value{
+  outliers A list with both alpha and beta outliers
+}
+\description{
+  A helper function to compute a panel box plot of activity
+  and return a list of outliers.
+}
+\examples{
+library(rWipeTest)
+}
+\keyword{keywords}
+

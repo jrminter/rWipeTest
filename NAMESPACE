@@ -1,2 +1,7 @@
 export(ComputeActivityAm241)
 export(ComputeActivityCl36)
+export(CreateVectorSummary)
+export(compDetEff)
+export(compSampleAcivity)
+export(loadCleanData)
+export(sortAna)

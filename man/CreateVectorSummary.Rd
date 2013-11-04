@@ -1,0 +1,22 @@
+\name{CreateVectorSummary}
+\alias{CreateVectorSummary}
+\title{Compute summary statistics for a vector}
+\usage{
+  CreateVectorSummary(x)
+}
+\arguments{
+  \item{x}{The input vector \code{x}}
+}
+\value{
+  stats A vector of statistics
+}
+\description{
+  A helper function to compute common summary statistics
+  for a vector of values and return a vector of statistics.
+}
+\examples{
+library(rWipeTest)
+stats <- CreateVectorSummary(rnorm(100,mean=1.0, sd=1.5))
+}
+\keyword{keywords}
+

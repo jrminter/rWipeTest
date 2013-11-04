@@ -2,14 +2,13 @@
 \alias{ComputeActivityAm241}
 \title{Compute the activity for our Am241 standard}
 \usage{
-  ComputeActivityAm241(strAnaDate)
+  ComputeActivityAm241(dt)
 }
 \arguments{
-  \item{strAnaDate}{The analysis date in Y-M-D format
-  \code{strAnaDate}}
+  \item{dt}{The analysis date in Y-M-D format \code{dt}}
 }
 \value{
-  curActivity The current activity
+  nAct The current activity in dpm
 }
 \description{
   Compute the current activity for the Am241 standard

@@ -2,13 +2,17 @@ Package: rWipeTest
 Type: Package
 Title: Analyze wipe tests from the Tennelec Eclipse software
 Description: Given a vector of batch numbers, query the Eclipse database and
-    analyze the wipe test data.
+    analyze the wipe test data. This writes summaey data, pdf plots, and
+    .tex files with the tables for the Sweave report.
 Version: 0.1.1
-Authors@R: # getOptions('devtools.desc.author')
+Authors@R: c(person("John", "Minter", role = c("aut", "cre","ths"), email =
+    "jrminter@gmail.com"))
 Author: John Minter <jrminter@gmail.com>
 Maintainer: John Minter <jrminter@gmail.com>
 Depends:
-    R (>= 3.0.2)
+    R (>= 3.0.2),
+    RODBC,
+    xtable
 Suggests:
     knitr
 License: MIT
@@ -17,3 +21,10 @@ Collate:
     'ComputeActivityCl36.R'
     'rWipeTest-package.r'
     'ComputeActivityAm241.R'
+    'CreateVectorSummary.R'
+    'actPanelBoxPlot.R'
+    'effPanelPplot.R'
+    'loadCleanData.R'
+    'sortAna.R'
+    'compDetEff.R'
+    'compSampleActivity.R'
