@@ -2,9 +2,9 @@ Package: rWipeTest
 Type: Package
 Title: Analyze wipe tests from the Tennelec Eclipse software
 Description: Given a vector of batch numbers, query the Eclipse database and
-    analyze the wipe test data. This writes summaey data, pdf plots, and
+    analyze the wipe test data. This writes summary data, pdf plots, and
     .tex files with the tables for the Sweave report.
-Version: 0.1.1
+Version: 0.1.2
 Authors@R: c(person("John", "Minter", role = c("aut", "cre","ths"), email =
     "jrminter@gmail.com"))
 Author: John Minter <jrminter@gmail.com>

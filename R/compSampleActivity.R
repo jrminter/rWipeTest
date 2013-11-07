@@ -25,8 +25,8 @@ compSampleActivity <- function(str.ana, str.wd, dat.dir){
   str.ana.file <- paste(dat.dir,'wipeTest.RData')
   load(str.ana.file)
 
-  pdf.dir       <- '../Sweave/pdf/'
-  tab.dir       <- '../Sweave/tab/'
+  pdf.dir       <- '../Sweave/inc/pdf/'
+  tab.dir       <- '../Sweave/inc/tex/'
   dir.create(pdf.dir, showWarnings = F, recursive = T)
   dir.create(tab.dir, showWarnings = F, recursive = T)
 
