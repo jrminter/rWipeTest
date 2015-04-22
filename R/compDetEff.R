@@ -26,8 +26,8 @@ compDetEff <- function(str.ana, str.wd, dat.dir){
   load(str.ana.file)
   str.det.eff.file <- '../dat/LastDetEff.RData'
 
-  pdf.dir  <- '../Sweave/inc/pdf/'
-  tab.dir  <- '../Sweave/inc/tex/'
+  pdf.dir  <- '../knitr/inc/pdf/'
+  tab.dir  <- '../knitr/inc/tex/'
   # make sure these exist
   dir.create(pdf.dir, showWarnings = F, recursive = T)
   dir.create(tab.dir, showWarnings = F, recursive = T)
