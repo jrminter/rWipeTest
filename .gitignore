@@ -28,3 +28,6 @@ README.html
 
 .Rproj.user
 .Rhistory
+
+# don't track autogen files
+man/*.Rd
