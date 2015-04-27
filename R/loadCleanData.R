@@ -18,6 +18,8 @@
 #' @return none
 #'
 #' @keywords keywords
+#' 
+#' @import RODBC
 #'
 #' @export
 #' 

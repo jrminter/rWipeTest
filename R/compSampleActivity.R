@@ -14,6 +14,8 @@
 #'
 #' @keywords keywords
 #'
+#' @import xtable
+#'
 #' @export
 #' 
 #' @examples
@@ -23,6 +25,14 @@
 compSampleActivity <- function(str.ana, str.wd, dat.dir){
   setwd(str.wd)
   str.ana.file <- paste(dat.dir,'wipeTest.RData')
+  
+  # avoid R CMD CHECK issue
+  alpha.stds <- NULL
+  beta.stds <- NULL
+  blanks <- NULL
+  samples <- NULL
+  df.det.eff <- NULL
+  
   load(str.ana.file)
 
   pdf.dir       <- '../knitr/inc/pdf/'

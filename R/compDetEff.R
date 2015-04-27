@@ -13,6 +13,8 @@
 #' @return none
 #'
 #' @keywords keywords
+#' 
+#' @import xtable
 #'
 #' @export
 #' 
@@ -23,6 +25,11 @@
 compDetEff <- function(str.ana, str.wd, dat.dir){
   setwd(str.wd)
   str.ana.file <- paste(dat.dir,'wipeTest.RData')
+  
+  # avoid R CMD CHECK issue
+  blanks <- NULL
+  samples <- NULL
+  
   load(str.ana.file)
   str.det.eff.file <- '../dat/LastDetEff.RData'
 
@@ -31,6 +38,8 @@ compDetEff <- function(str.ana, str.wd, dat.dir){
   # make sure these exist
   dir.create(pdf.dir, showWarnings = F, recursive = T)
   dir.create(tab.dir, showWarnings = F, recursive = T)
+  
+  
 
   n.alpha <- nrow(alpha.stds)
 

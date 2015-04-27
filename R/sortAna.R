@@ -27,6 +27,7 @@ sortAna <- function(str.ana, str.wd, dat.dir){
 
   str.file <- paste(dat.dir, str.ana, '-raw.R', sep='')
   data <- dget(str.file)
+  
 
   alpha.stds <- subset(data, data$id=="Am-241")
   beta.stds  <- subset(data, data$id=="Cl-36")
